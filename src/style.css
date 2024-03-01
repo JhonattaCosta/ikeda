@@ -69,7 +69,7 @@ header {
 
 
 .bg-home {
-    background-image: url('../assets/Rectangle\ 1.jpg');
+    background-image: url('https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/Rectangle%201.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
