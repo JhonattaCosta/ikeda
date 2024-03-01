@@ -59,3 +59,33 @@ header {
     color: var(--primary-link-color);
     text-transform: uppercase;
 }
+
+
+
+/*--RESPONSIVE--*/
+
+/*GLOBAL*/
+
+@media (max-width:576px){
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 100%;
+    } 
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 100%;
+    } 
+}
