@@ -38,14 +38,14 @@
             </ul>
         </div>
     </header><!--End Menu-->
-    <main class="bg-home home" id="home">
+    <main class="bg-home home" id="home"><!--HOME-->
         <div class="home-title container">
             <h4>Titulo Centralizado</h4>
             <h2>Titulo Centralizado</h2>
             <button><a href="">TELL ME MORE</a></button>
-        </div>
+        </div><!--END HOME-->
     </main>
-    <div class="service container" id="service">
+    <div class="service container" id="service"><!--SERVICE-->
         <div class="box-container">
             <div class="box-service">
                 <div class="box-image">
@@ -72,7 +72,34 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><!--END SERVICE-->
+    <div class="main-gallery container"><!--MAIN-GALLERY-->
+        <div class="gallery"><!--GALLERY-->
+            <figure class="gallery-item gallery-item--1">
+                <img src="https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/img-1.jpg" class="gallery-img" alt="Image 1" onclick="openModal(this)">
+            </figure>
+            <figure class="gallery-item gallery-item--2">
+                <img src="https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/img-2.jpg" class="gallery-img" alt="Image 2" onclick="openModal(this)">
+            </figure>
+            <figure class="gallery-item gallery-item--3">
+                <img src="https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/img-3.jpg" class="gallery-img" alt="Image 3" onclick="openModal(this)">
+            </figure>
+            <figure class="gallery-item gallery-item--4">
+                <img src="https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/img-4.jpg" class="gallery-img" alt="Image 4" onclick="openModal(this)">
+            </figure>
+            <figure class="gallery-item gallery-item--5">
+                <img src="https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/img-5.jpg" class="gallery-img" alt="Image 5" onclick="openModal(this)">
+            </figure>
+            <figure class="gallery-item gallery-item--6">
+                <img src="https://raw.githubusercontent.com/JhonattaCosta/ikeda/main/assets/img-6.jpg" class="gallery-img" alt="Image 6" onclick="openModal(this)">
+            </figure>
+        </div><!--END GALLERY-->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content modal-center" id="imagemModal">
+        </div>
+    </div><!--END MAIN-GALLERY-->
 
+<script src="script.js"></script>
 </body>
 </html>
