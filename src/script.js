@@ -25,3 +25,31 @@ function checkAppearing() {
 
 window.addEventListener('scroll', checkAppearing);
 window.addEventListener('load', checkAppearing);
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio do formulário padrão
+    var form = event.target;
+    var url = form.getAttribute("action");
+    var formValues = new FormData(form);
+    var formParams = new URLSearchParams(formValues);
+    var newWindow = window.open(url, "_blank"); // Abre uma nova aba
+    fetch(url, {
+        method: "POST",
+        body: formParams,
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+    }).then(response => {
+        if (response.ok) {
+            // Se o envio for bem-sucedido, exiba uma mensagem na nova aba
+            newWindow.document.write("<h1>Formulário enviado com sucesso!</h1>");
+        } else {
+            // Se houver algum problema no envio, exiba uma mensagem de erro
+            newWindow.document.write("<h1>Ocorreu um erro ao enviar o formulário.</h1>");
+        }
+    }).catch(error => {
+        // Se houver um erro ao enviar a requisição, exiba uma mensagem de erro
+        newWindow.document.write("<h1>Ocorreu um erro ao enviar o formulário.</h1>");
+        console.error("Erro ao enviar o formulário:", error);
+    });
+});
