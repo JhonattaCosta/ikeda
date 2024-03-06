@@ -67,6 +67,18 @@ header {
     padding: 0 15px;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+/* Estilize as barras do menu hambúrguer */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+}
+
 
 /*HOME*/
 
@@ -154,12 +166,11 @@ header {
 
 .box-service {
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 230px;
 }
 .box-service h3 {
     font-size: 18px;
-    padding-top: 10px;
 
 }
 
@@ -409,4 +420,23 @@ form{
     .container {
         max-width: 100%;
     } 
+}
+
+@media (max-width:780px) {
+
+    .logo {
+        font-size: 30px;
+    }
+    .nav-menu li a {
+        padding: 0 5px;
+    }
+
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-service {
+        margin-top: 30px;
+    }
 }
