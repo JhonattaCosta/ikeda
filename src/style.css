@@ -98,12 +98,12 @@ header {
 
 .bg-home h4 {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .bg-home h2 {
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .bg-home button a{
@@ -111,6 +111,7 @@ header {
     color: var(--primary-link-color);
     font-size: 15px;
 }
+
 
 .bg-home button {
     margin-top: 40px;
@@ -121,6 +122,7 @@ header {
     border-radius: 3px;
     box-shadow: 1px 2px 8px black;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .bg-home button:hover {
@@ -147,6 +149,10 @@ header {
     cursor: pointer;
 }
 
+.home-title span {
+    color: #879F79;
+}
+
 .feather {
     transition: transform 0.3s ease-in-out;
 }
@@ -161,7 +167,7 @@ header {
 .box-container {
     display: flex;
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
 .box-service {
@@ -179,10 +185,35 @@ header {
     height: 125px;
 }
 
+/*BTN-BUDGET*/
+
+.btn-budget {
+text-align: center;
+}
+
+.btn-budget button {
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 8px black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.btn-budget button a {
+    text-decoration: none;
+    color: var(--primary-link-color);
+    font-size: 15px;
+}
+
 /*GALLERY*/
 
 .gallery {
-    padding: 40px 0;
+    padding: 60px 0;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
@@ -423,7 +454,6 @@ form{
 }
 
 @media (max-width:780px) {
-
     .logo {
         font-size: 30px;
     }
