@@ -1,3 +1,15 @@
+//FUNCTION PARA ABRIR MENU MOBILE
+function menuShow (){
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('open')){
+    menuMobile.classList.remove('open');
+    document.querySelector('.icon').src = "https://raw.githubusercontent.com/JhonattaCosta/ikeda/964181df071ce624a667756cd2562d50dcf30616/assets/menu_white.svg";
+  }else{
+    menuMobile.classList.add('open');
+    document.querySelector('.icon').src = "https://raw.githubusercontent.com/JhonattaCosta/ikeda/964181df071ce624a667756cd2562d50dcf30616/assets/close_white.svg";
+  }
+}
+
 //function para abrir modal
 function openModal(elemento) {
   var modal = document.getElementById("modal");
